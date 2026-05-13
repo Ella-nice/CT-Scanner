@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT-Scanner: Roman Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="score">🔥 Streak: <span id="scoreVal">0</span></div>
+        </header>
+
+        <main>
+            <div class="question-box">
+                <div id="readingText" class="reading-text hidden"></div>
+                <p id="questionText">Loading...</p>
+            </div>
+
+            <div class="options-container" id="optionsBox"></div>
+
+            <div class="tutor-box hidden" id="tutorBox">
+                <p id="tutorMessage">Tutor message</p>
+                <button id="nextBtn" class="next-btn">Got it, next!</button>
+            </div>
+        </main>
+    </div>
+<script src="data.js"></script>
+    <script src="data_drill.js"></script> <script src="app.js"></script>
+</body>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

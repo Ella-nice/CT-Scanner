@@ -1,0 +1,107 @@
+/* Базовые настройки и Темная тема */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a2e; /* Глубокий темный фон */
+    color: #e0e0e0; /* Светло-серый текст */
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px; /* Идеально для телефонов и по центру на ПК */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Верхняя панель со стриком */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 30px;
+}
+
+.score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50; /* Неоново-зеленый */
+}
+
+/* Вопрос */
+.question-box {
+    background-color: #16213e;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Кнопки вариантов ответа */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-btn {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Реакции на нажатие */
+.option-btn:active {
+    transform: scale(0.98);
+}
+.option-btn.correct {
+    background-color: #4caf50 !important; /* Зеленый при верном */
+}
+.option-btn.wrong {
+    background-color: #e94560 !important; /* Красный при ошибке */
+}
+
+/* Окно Тьютора */
+.tutor-box {
+    margin-top: 30px;
+    background-color: #e94560; /* Красный фон для привлечения внимания */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.tutor-box.hidden {
+    display: none; /* Прячет окно, пока нет ошибки */
+}
+
+.next-btn {
+    margin-top: 15px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
